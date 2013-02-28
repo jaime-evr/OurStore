@@ -10,11 +10,23 @@ gem 'pg'
 group :assets do
   gem 'sass-rails',   '~> 4.0.0.beta1'
   gem 'coffee-rails', '~> 4.0.0.beta1'
+  gem 'bourbon'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', platforms: :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :development do
+  gem 'better_errors'
+  gem 'meta_request'
+  gem 'pry-rails'
+end
+
+group :test do
+  gem 'minitest-rails'
+  gem 'minitest-rails-capybara'
 end
 
 gem 'jquery-rails'
@@ -26,7 +38,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.0.1'
 
 # To use ActiveModel has_secure_password
-# gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the app server
 # gem 'unicorn'
