@@ -24,8 +24,9 @@ group :development do
   gem 'pry-rails'
 end
 
+gem 'minitest-rails'
+
 group :test do
-  gem 'minitest-rails'
   gem 'minitest-rails-capybara'
 end
 
